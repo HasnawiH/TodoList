@@ -1,7 +1,13 @@
+Untuk Melakukan edit silahkan klik titlenya.
 
 ## ScreenShoot
-
 <p align="center">
-<img width="250" height="400" src="./src/assets/Screenshot/utama.png">    
+<img  src="./src/assets/Screenshot/utama.png">    
+</p>
+<p align="center">
+<img  src="./src/assets/Screenshot/addNew.png">    
+</p>
+<p align="center">
+<img  src="./src/assets/Screenshot/edit.png">    
 </p>
 
