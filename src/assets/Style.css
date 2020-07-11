@@ -41,6 +41,13 @@
 .input-task{
     padding: 0.50rem;
     width: 98%;
+    border-radius: 5px;
+    border: 1px solid #f4f6ff;
+}
+
+.input-task:focus{
+    border: 1px solid #8bcdcd;
+    outline: none;
 }
 
 .add-task{

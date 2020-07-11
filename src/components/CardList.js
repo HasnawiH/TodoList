@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CardList = ({ data, deleteTask, complete, index }) => {
+const CardList = ({ data, deleteTask, complete, editTask }) => {
   const [showInput, setShowInput] = useState(true);
   const [dataUpdate, setDataUpdate] = useState({
     id: null,
@@ -8,6 +8,11 @@ const CardList = ({ data, deleteTask, complete, index }) => {
     desc: "",
     done: false,
   });
+
+  const update = () => {
+    editTask(dataUpdate)
+    setShowInput(true)
+  }
 
   useEffect(
     (v, i) => {
@@ -20,6 +25,8 @@ const CardList = ({ data, deleteTask, complete, index }) => {
     },
     [data]
   );
+
+  console.log(dataUpdate)
 
   return (
     <div className="card-list">
@@ -50,14 +57,14 @@ const CardList = ({ data, deleteTask, complete, index }) => {
               ) : (
                 <div style={{display: "flex"}}>
                   <input
-                    value={data.title}
+                    value={dataUpdate.title}
                     onChange={(e) =>
                       setDataUpdate({ ...dataUpdate, title: e.target.value })
                     }
                     className="input-task"
                   />
-                  <div className="update-task">Cancel</div>
-                  <div className="update-task">Save</div>
+                  <div onClick={() => setShowInput(true)} className="update-task">Cancel</div>
+                  <div onClick={update} className="update-task">Save</div>
                 </div>
               )}
             </div>
