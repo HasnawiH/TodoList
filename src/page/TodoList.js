@@ -4,13 +4,13 @@ import { ReactSortable } from "react-sortablejs";
 import AddNew from "../components/AddNew";
 import "../assets/Style.css";
 
-//FUNCTION LIST
 const TodoList = () => {
   const [showNew, setShowNew] = useState(false);
   const handleShow = () => setShowNew(!showNew);
   const [id, setId] = useState(2);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [search, setSearch] = useState("");
 
   //STATE AWAL LIST TASK
   const [list, setList] = useState([
@@ -63,7 +63,24 @@ const TodoList = () => {
     setList(current);
   };
 
+  //HANDLE SEARCH
+  const handleSearch = () => {
+    let current = search;
+    if (current === "") {
+      return;
+    } else {
+      // let data = list.filter((v, i) => v.title === search);
+      // setList(data);
+      // setSearch("");
+    }
+  };
+
+  useEffect(() => {
+    handleSearch();
+  }, [search]);
+
   console.log(`ini list`, list);
+  console.log(search);
   return (
     <div>
       <div className="header">Todo List</div>
@@ -88,7 +105,11 @@ const TodoList = () => {
               </div>
 
               <div style={{ marginTop: "1rem" }}>
-                <input className="input-task" placeholder="Search task..." />
+                <input
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="input-task"
+                  placeholder="Search task..."
+                />
               </div>
               <div style={{ width: "100%", marginTop: "1rem" }}>
                 <ReactSortable

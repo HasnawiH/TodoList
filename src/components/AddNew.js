@@ -33,7 +33,7 @@ const AddNew = ({ handleTitle, handleDesc, handleShow, addNew }) => {
             <input
               onChange={(e) => handleTitle(e.target.value)}
               className="input-task"
-              placeholder="Input name task"
+            //   placeholder="Input name task"
             />
           </div>
           <div style={{ marginTop: "2rem" }}>
