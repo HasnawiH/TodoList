@@ -1,0 +1,85 @@
+.header{
+    background-color: #4f8a8b;
+    height: 3rem;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: inherit;
+}
+
+.container{
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.container-todo{
+    margin-top: 2rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task{
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.input-task{
+    padding: 0.50rem;
+    width: 98%;
+}
+
+.add-task{
+    border: 1px solid #f4f6ff;
+    border-radius: 5px;
+    padding: 0.50rem;
+    background-color: black;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.update-task{
+    border: 1px solid #f4f6ff;
+    border-radius: 5px;
+    padding: 0.50rem;
+    background-color: #383e56;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-list{
+    padding: 1rem;
+    border: 2px solid #f4f6ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    cursor: move;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
