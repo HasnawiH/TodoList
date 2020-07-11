@@ -64,20 +64,20 @@ const TodoList = () => {
   };
 
   //HANDLE SEARCH
-  const handleSearch = () => {
-    let current = search;
-    if (current === "") {
-      return;
-    } else {
-      // let data = list.filter((v, i) => v.title === search);
-      // setList(data);
-      // setSearch("");
-    }
-  };
+  // const handleSearch = () => {
+  //   let current = search;
+  //   if (current === "") {
+  //     return;
+  //   } else {
+  //     // let data = list.filter((v, i) => v.title === search);
+  //     // setList(data);
+  //     // setSearch("");
+  //   }
+  // };
 
-  useEffect(() => {
-    handleSearch();
-  }, [search]);
+  // useEffect(() => {
+  //   handleSearch();
+  // }, [search]);
 
   console.log(`ini list`, list);
   console.log(search);
